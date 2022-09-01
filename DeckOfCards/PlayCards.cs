@@ -12,7 +12,7 @@ namespace DeckOfCards
         {
             Random random = new Random();
             var suits = new List<string> { "Diamond", "Heart", "Spades", "Club" };
-            var rank = new List<string> { "2", "3", "4", "5", "6", "7", "8", "8", "9", "10", "J", "Q", "K", "A" };
+            var rank = new List<string> { "2", "3", "4", "5", "6", "7", "8", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
             LinkedList<string> cards = new LinkedList<string>();
             LinkedList<string> players = new LinkedList<string>();
             for (int i = 0; i < suits.Count; i++)
@@ -72,7 +72,7 @@ namespace DeckOfCards
             Console.WriteLine("******************** After Shuffling ********************");
             foreach (var member in sorted)
             {
-                Console.WriteLine(" " + member + " ");
+                Console.WriteLine(" " + member + " ");d
             }
         }
     }
